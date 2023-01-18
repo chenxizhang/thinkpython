@@ -14,7 +14,7 @@ permissions:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  enable pages:
+  enable_pages:
     runs-on: ubuntu-latest
     steps:
       - name: Configure GitHub Pages
