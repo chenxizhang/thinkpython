@@ -1,7 +1,7 @@
 {
-    "title": "我的书籍标题",
+    "title": "Python 编程入门",
     "author": "陈希章",
-    "description": "书籍的描述信息，可用于SEO",
+    "description": "Think python的中文版，以及我的个人讲解",
     "language": "zh",
     "root": "docs",
     "plugins": [
@@ -9,7 +9,7 @@
     ],
     "pluginsConfig": {
         "analytics": {
-            "uid": "UA-194975404-1"
+            "uid": "G-ZWMWGMY5LK"
         }
     }
 }
