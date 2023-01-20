@@ -12,7 +12,8 @@ function Get-MDSummary {
             Write-Output "* [$title]($file)"
         }
         else {
-            $anchor = $title -replace "\s+", "-"
+            $anchor = $title -replace "\s", "-"
+            $anchor = [System.Web.HttpUtility]::UrlEncode($anchor)
             Write-Output "    * [$title]($file#$anchor)"
         }
     }
