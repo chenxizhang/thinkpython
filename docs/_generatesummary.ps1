@@ -13,8 +13,8 @@ function Get-MDSummary {
         }
         else {
             $anchor = $title -replace "\s", "-"
-            $anchor = [System.Web.HttpUtility]::UrlEncode($anchor)
             $anchor = $anchor -replace "\.", ""
+            $anchor = [uri]::EscapeUriString($anchor)
             Write-Output "    * [$title]($file#$anchor)"
         }
     }
