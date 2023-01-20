@@ -4,9 +4,9 @@ function Get-MDSummary {
     )
 
     $md = ConvertFrom-Markdown $file
-    $tokens = $md.Tokens | Where-Object { $_.HeaderChar -eq '#' -and $_.Level -le 2 }
+    $tokens = $md.Tokens | Where-Object { $_.Level -in (1, 2) } | Select-Object -Property Inline, Level
     $tokens | ForEach-Object {
-        $title = $_.Inline
+        $title = $_.Inline.Content.ToString().Substring($_.Span)
 
         if ($_.Level -eq 1) {
             Write-Output "* [$title]($file)"
@@ -14,6 +14,7 @@ function Get-MDSummary {
         else {
             $anchor = $title -replace "\s", "-"
             $anchor = [System.Web.HttpUtility]::UrlEncode($anchor)
+            $anchor = $anchor -replace "\.", ""
             Write-Output "    * [$title]($file#$anchor)"
         }
     }
@@ -26,4 +27,4 @@ Get-ChildItem chapter*.md | `
     Sort-Object -Property index |`
     ForEach-Object {
     Get-MDSummary -file $_.Name 
-} | Set-Clipboard
+} | Set-Clipboard | Write-Output '结果已经复制到剪贴板'
