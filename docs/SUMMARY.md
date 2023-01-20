@@ -2,9 +2,9 @@
 
 * [简介](README.md)
 * [第一章 编程之路](chapter1.md)
-    * [1.1  程序是什么？](chapter1.md#11--%E7%A8%8B%E5%BA%8F%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F)
-    * [1.2  运行 Python](chapter1.md#12--%E8%BF%90%E8%A1%8C-Python)
-    * [1.3  第一个程序](chapter1.md#13--%E7%AC%AC%E4%B8%80%E4%B8%AA%E7%A8%8B%E5%BA%8F)
+    * [1.1  程序是什么？](chapter1.md#11-程序是什么)
+    * [1.2  运行 Python](chapter1.md#12-运行-python)
+    * [1.3  第一个程序](chapter1.md#13-第一个程序)
     * [1.4  运算符](chapter1.md#14--%E8%BF%90%E7%AE%97%E7%AC%A6)
     * [1.5  值和类型](chapter1.md#15--%E5%80%BC%E5%92%8C%E7%B1%BB%E5%9E%8B)
     * [1.6  公式语言和自然语言](chapter1.md#16--%E5%85%AC%E5%BC%8F%E8%AF%AD%E8%A8%80%E5%92%8C%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80)
