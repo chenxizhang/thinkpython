@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "honkit build",
+    "build": "honkit build . _site",
     "serve": "honkit serve",
     "pdf": "honkit pdf"
   },
