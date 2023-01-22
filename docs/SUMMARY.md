@@ -1,6 +1,6 @@
 # Summary 
 
-* [简介](readme.md)
+* [简介](README.md)
 * [第一章 编程之路](chapter1.md)
     * [1.1  程序是什么？](chapter1.md#11--程序是什么？)
     * [1.2  运行 Python](chapter1.md#12--运行-python)
