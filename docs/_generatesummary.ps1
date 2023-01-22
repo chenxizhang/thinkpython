@@ -27,4 +27,4 @@ Get-ChildItem chapter*.md | `
     Sort-Object -Property index |`
     ForEach-Object {
     Get-MDSummary -file $_.Name 
-} | Set-Clipboard | Write-Output '结果已经复制到剪贴板'
+} | Set-Clipboard
