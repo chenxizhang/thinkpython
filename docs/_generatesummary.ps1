@@ -14,7 +14,6 @@ function Get-MDSummary {
         else {
             $anchor = $title -replace "\s", "-"
             $anchor = $anchor -replace "\.", ""
-            $anchor = [uri]::EscapeUriString($anchor)
             Write-Output "    * [$title]($file#$anchor)"
         }
     }
