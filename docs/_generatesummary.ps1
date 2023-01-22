@@ -14,6 +14,7 @@ function Get-MDSummary {
         else {
             $anchor = $title -replace "\s", "-"
             $anchor = $anchor -replace "\.", ""
+            $anchor = $anchor.ToLower()
             Write-Output "    * [$title]($file#$anchor)"
         }
     }
