@@ -2,7 +2,7 @@
     "title": "Python 编程入门",
     "author": "陈希章",
     "description": "Think python的中文版，以及我的个人讲解",
-    "language": "zh",
+    "language": "zh-hans",
     "root": "docs",
     "plugins": [
         "honkit-plugin-google-analytics"
